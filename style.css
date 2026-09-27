@@ -1,0 +1,244 @@
+@charset "UTF-8";
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Darker Grotesque";
+    height: 100%;
+    font-size: 18px;
+    position: absolute;
+    left: 6%;
+    right: 6%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #00aaff;
+}
+
+
+/* Giao diện chung */
+.faq-container {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.faq-title {
+    font-size: 22px;
+    color: #1A202C;
+    margin-bottom: 24px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.faq-title i {
+    color: #0066cc;
+}
+
+.faq-item {
+    background-color: #F0F2F5;
+    border-radius: 16px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+/* Hiệu ứng nổi bật nhẹ khi mở hoặc hover */
+.faq-item:hover {
+    background-color: #E4E6EB;
+}
+
+.faq-item.active {
+    border-color: #D2D6DC;
+    background-color: #F0F2F5;
+}
+
+/* Nút bấm câu hỏi */
+.faq-button {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+}
+
+.faq-question-text {
+    font-size: 16px;
+    color: #1C1E21;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-right: 10px;
+}
+
+.faq-question-text i {
+    color: #4A5568;
+    width: 20px;
+    text-align: center;
+}
+
+/* Mũi tên trạng thái đóng/mở */
+.faq-arrow {
+    color: #65676B;
+    transition: transform 0.3s ease;
+    font-size: 14px;
+}
+
+.faq-item.active .faq-arrow {
+    transform: rotate(180deg);
+}
+
+/* Phần nội dung câu trả lời (Ẩn/Hiện bằng hiệu ứng trượt) */
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.faq-answer {
+    padding: 0 24px 20px 56px; /* Căn lề thẳng với chữ câu hỏi */
+    font-size: 15px;
+    color: #4A5568;
+    line-height: 1.6;
+    margin: 0;
+    text-align: justify;
+}
+
+/* Danh sách mức lương */
+.salary-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.salary-list li {
+    margin-bottom: 8px;
+}
+
+.text-green { color: #2F855A; }
+.text-orange { color: #DD6B20; }
+.text-gold { color: #D69E2E; }
+
+
+button {
+    border: 1px solid;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 25px;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+.button-37 {
+    background-color: #13aa52;
+    width: 320px;
+}
+
+.button-38 {
+    background-color: red;
+    width: 320px;
+}
+
+
+.book a:link {
+    color: red;
+}
+
+.book a:visited {
+    color: red;
+}
+
+.book a:hover {
+    color: green;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.box {
+    background-color: #F0F2F5; 
+    color: #1C1E21; 
+    border-radius: 20px; 
+    padding: 24px 32px; 
+    max-width: 800px; 
+    text-align: justify; 
+    line-height: 1.6; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    body {
+        left: 6px;
+        right: 6px;
+    }
+
+    .navbar {
+        padding: 0px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .nav-links li {
+        margin: 0 5px;
+    }
+
+
+}
